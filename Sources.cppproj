@@ -1,0 +1,343 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="14.0">
+  <PropertyGroup>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectVersion>7.0</ProjectVersion>
+    <ToolchainName>com.Atmel.ARMGCC.CPP</ToolchainName>
+    <ProjectGuid>dce6c7e3-ee26-4d79-826b-08594b9ad897</ProjectGuid>
+    <avrdevice>ATSAM4E16E</avrdevice>
+    <avrdeviceseries>none</avrdeviceseries>
+    <OutputType>Executable</OutputType>
+    <Language>CPP</Language>
+    <OutputFileName>$(MSBuildProjectName)</OutputFileName>
+    <OutputFileExtension>.elf</OutputFileExtension>
+    <OutputDirectory>$(MSBuildProjectDirectory)\$(Configuration)</OutputDirectory>
+    <AssemblyName>Sources</AssemblyName>
+    <Name>Sources</Name>
+    <RootNamespace>Sources</RootNamespace>
+    <ToolchainFlavour>Native</ToolchainFlavour>
+    <KeepTimersRunning>true</KeepTimersRunning>
+    <OverrideVtor>false</OverrideVtor>
+    <CacheFlash>true</CacheFlash>
+    <ProgFlashFromRam>true</ProgFlashFromRam>
+    <RamSnippetAddress>0x20000000</RamSnippetAddress>
+    <UncachedRange />
+    <preserveEEPROM>true</preserveEEPROM>
+    <OverrideVtorValue>exception_table</OverrideVtorValue>
+    <BootSegment>2</BootSegment>
+    <eraseonlaunchrule>0</eraseonlaunchrule>
+    <ExternalProgrammingToolCommand />
+    <AsfFrameworkConfig>
+      <framework-data xmlns="">
+        <options />
+        <configurations />
+        <files />
+        <documentation help="" />
+        <offline-documentation help="" />
+        <dependencies>
+          <content-extension eid="atmel.asf" uuidref="Atmel.ASF" version="3.27.3" />
+        </dependencies>
+      </framework-data>
+    </AsfFrameworkConfig>
+    <avrtool>com.atmel.avrdbg.tool.samice</avrtool>
+    <avrtoolserialnumber>28018577</avrtoolserialnumber>
+    <avrdeviceexpectedsignature>0xA3CC0CE0</avrdeviceexpectedsignature>
+    <com_atmel_avrdbg_tool_samice>
+      <ToolOptions>
+        <InterfaceProperties>
+          <JtagDbgClock>0</JtagDbgClock>
+          <JtagEnableExtResetOnStartSession>true</JtagEnableExtResetOnStartSession>
+          <JtagInChain>false</JtagInChain>
+          <JtagDevicesBefore>0</JtagDevicesBefore>
+          <JtagDevicesAfter>0</JtagDevicesAfter>
+          <JtagInstrBitsBefore>0</JtagInstrBitsBefore>
+          <JtagInstrBitsAfter>0</JtagInstrBitsAfter>
+          <JtagSelectedDeviceIndexInChain>
+          </JtagSelectedDeviceIndexInChain>
+          <JtagDaisyChainDevices>
+          </JtagDaisyChainDevices>
+        </InterfaceProperties>
+        <InterfaceName>JTAG</InterfaceName>
+        <JlinkConfigFile>C:\AtmelWorkspace\Sources\Development\SineWave\jlink.config</JlinkConfigFile>
+      </ToolOptions>
+      <ToolType>com.atmel.avrdbg.tool.samice</ToolType>
+      <ToolNumber>28018577</ToolNumber>
+      <ToolName>SAM-ICE</ToolName>
+    </com_atmel_avrdbg_tool_samice>
+    <avrtoolinterface>JTAG</avrtoolinterface>
+    <avrtoolinterfaceclock>0</avrtoolinterfaceclock>
+    <SccProjectName>$/Reusable Instrument Project/Embedded/Sources/Main</SccProjectName>
+    <SccProvider>MSSCCI:Team Foundation Server MSSCCI Provider</SccProvider>
+    <SccAuxPath />
+    <SccLocalPath>.</SccLocalPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <ToolchainSettings>
+      <ArmGccCpp>
+        <armgcc.common.outputfiles.hex>True</armgcc.common.outputfiles.hex>
+        <armgcc.common.outputfiles.lss>True</armgcc.common.outputfiles.lss>
+        <armgcc.common.outputfiles.eep>True</armgcc.common.outputfiles.eep>
+        <armgcc.common.outputfiles.bin>True</armgcc.common.outputfiles.bin>
+        <armgcc.common.outputfiles.srec>True</armgcc.common.outputfiles.srec>
+        <armgcc.compiler.symbols.DefSymbols>
+          <ListValues>
+            <Value>NDEBUG</Value>
+          </ListValues>
+        </armgcc.compiler.symbols.DefSymbols>
+        <armgcc.compiler.directories.IncludePaths>
+          <ListValues>
+            <Value>%24(PackRepoDir)\atmel\SAM4E_DFP\1.0.27\ic.sam4e\include</Value>
+            <Value>%24(PackRepoDir)\arm\cmsis\4.2.0\CMSIS\Include\</Value>
+          </ListValues>
+        </armgcc.compiler.directories.IncludePaths>
+        <armgcc.compiler.optimization.level>Optimize for size (-Os)</armgcc.compiler.optimization.level>
+        <armgcc.compiler.optimization.PrepareFunctionsForGarbageCollection>True</armgcc.compiler.optimization.PrepareFunctionsForGarbageCollection>
+        <armgcc.compiler.warnings.AllWarnings>True</armgcc.compiler.warnings.AllWarnings>
+        <armgcccpp.compiler.symbols.DefSymbols>
+          <ListValues>
+            <Value>NDEBUG</Value>
+          </ListValues>
+        </armgcccpp.compiler.symbols.DefSymbols>
+        <armgcccpp.compiler.directories.IncludePaths>
+          <ListValues>
+            <Value>%24(PackRepoDir)\atmel\SAM4E_DFP\1.0.27\ic.sam4e\include</Value>
+            <Value>%24(PackRepoDir)\arm\cmsis\4.2.0\CMSIS\Include\</Value>
+          </ListValues>
+        </armgcccpp.compiler.directories.IncludePaths>
+        <armgcccpp.compiler.optimization.level>Optimize for size (-Os)</armgcccpp.compiler.optimization.level>
+        <armgcccpp.compiler.optimization.PrepareFunctionsForGarbageCollection>True</armgcccpp.compiler.optimization.PrepareFunctionsForGarbageCollection>
+        <armgcccpp.compiler.warnings.AllWarnings>True</armgcccpp.compiler.warnings.AllWarnings>
+        <armgcccpp.linker.libraries.Libraries>
+          <ListValues>
+            <Value>libm</Value>
+            <Value>libserial_circular_buffer_service.a</Value>
+            <Value>libLSCP_service.a</Value>
+          </ListValues>
+        </armgcccpp.linker.libraries.Libraries>
+        <armgcccpp.linker.libraries.LibrarySearchPaths>
+          <ListValues>
+            <Value>%24(ProjectDir)\Device_Startup</Value>
+            <Value>C:\AtmelWorkspace\Sources\Main\Sources\LSCI libraries</Value>
+            <Value>../../../Main/LSCI libraries</Value>
+            <Value>../../../../Libraries/serial_circular_buffer_service/Main/serial_circular_buffer_service/Debug</Value>
+            <Value>../../../../Libraries/LSCP_Service/Main/LSCP_Service/Debug</Value>
+            <Value>C:\AtmelWorkspace\Libraries\LSCP_Service\Main\LSCP_Service\Debug</Value>
+            <Value>C:\AtmelWorkspace\Libraries\serial_circular_buffer_service\Main\serial_circular_buffer_service\Debug</Value>
+          </ListValues>
+        </armgcccpp.linker.libraries.LibrarySearchPaths>
+        <armgcccpp.linker.optimization.GarbageCollectUnusedSections>True</armgcccpp.linker.optimization.GarbageCollectUnusedSections>
+        <armgcccpp.linker.memorysettings.ExternalRAM />
+        <armgcccpp.linker.miscellaneous.LinkerFlags>-Tsam4e16e_flash.ld</armgcccpp.linker.miscellaneous.LinkerFlags>
+        <armgcccpp.preprocessingassembler.general.IncludePaths>
+          <ListValues>
+            <Value>%24(PackRepoDir)\atmel\SAM4E_DFP\1.0.27\ic.sam4e\include</Value>
+            <Value>%24(PackRepoDir)\arm\cmsis\4.2.0\CMSIS\Include\</Value>
+          </ListValues>
+        </armgcccpp.preprocessingassembler.general.IncludePaths>
+      </ArmGccCpp>
+    </ToolchainSettings>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <ToolchainSettings>
+      <ArmGccCpp>
+        <armgcc.common.outputfiles.hex>True</armgcc.common.outputfiles.hex>
+        <armgcc.common.outputfiles.lss>True</armgcc.common.outputfiles.lss>
+        <armgcc.common.outputfiles.eep>True</armgcc.common.outputfiles.eep>
+        <armgcc.common.outputfiles.bin>True</armgcc.common.outputfiles.bin>
+        <armgcc.common.outputfiles.srec>True</armgcc.common.outputfiles.srec>
+        <armgcc.compiler.symbols.DefSymbols>
+          <ListValues>
+            <Value>DEBUG</Value>
+          </ListValues>
+        </armgcc.compiler.symbols.DefSymbols>
+        <armgcc.compiler.directories.IncludePaths>
+          <ListValues>
+            <Value>%24(PackRepoDir)\atmel\SAM4E_DFP\1.1.45\ic.sam4e\include</Value>
+            <Value>%24(PackRepoDir)\arm\cmsis\4.2.0\CMSIS\Include\</Value>
+            <Value>../build</Value>
+            <Value>../include</Value>
+            <Value>../LSCI libraries</Value>
+            <Value>../source</Value>
+            <Value>../third party</Value>
+          </ListValues>
+        </armgcc.compiler.directories.IncludePaths>
+        <armgcc.compiler.optimization.level>Optimize most (-O3)</armgcc.compiler.optimization.level>
+        <armgcc.compiler.optimization.PrepareFunctionsForGarbageCollection>True</armgcc.compiler.optimization.PrepareFunctionsForGarbageCollection>
+        <armgcc.compiler.optimization.EnableUnsafeMatchOptimizations>True</armgcc.compiler.optimization.EnableUnsafeMatchOptimizations>
+        <armgcc.compiler.optimization.EnableFastMath>True</armgcc.compiler.optimization.EnableFastMath>
+        <armgcc.compiler.optimization.DebugLevel>Maximum (-g3)</armgcc.compiler.optimization.DebugLevel>
+        <armgcc.compiler.warnings.AllWarnings>True</armgcc.compiler.warnings.AllWarnings>
+        <armgcc.compiler.miscellaneous.OtherFlags>-std=gnu99 -Wno-unknown-pragmas -pipe -fno-strict-aliasing -Wall -Wextra -ffunction-sections -fdata-sections --param max-inline-insns-single=500 -mfloat-abi=softfp -mfpu=fpv4-sp-d16</armgcc.compiler.miscellaneous.OtherFlags>
+        <armgcccpp.compiler.symbols.DefSymbols>
+          <ListValues>
+            <Value>DEBUG</Value>
+          </ListValues>
+        </armgcccpp.compiler.symbols.DefSymbols>
+        <armgcccpp.compiler.directories.IncludePaths>
+          <ListValues>
+            <Value>%24(PackRepoDir)\atmel\SAM4E_DFP\1.1.45\ic.sam4e\include</Value>
+            <Value>%24(PackRepoDir)\arm\cmsis\4.2.0\CMSIS\Include\</Value>
+            <Value>../build</Value>
+            <Value>../include</Value>
+            <Value>../LSCI libraries</Value>
+            <Value>../port</Value>
+            <Value>../source</Value>
+            <Value>../third party</Value>
+          </ListValues>
+        </armgcccpp.compiler.directories.IncludePaths>
+        <armgcccpp.compiler.optimization.level>Optimize most (-O3)</armgcccpp.compiler.optimization.level>
+        <armgcccpp.compiler.optimization.PrepareFunctionsForGarbageCollection>True</armgcccpp.compiler.optimization.PrepareFunctionsForGarbageCollection>
+        <armgcccpp.compiler.optimization.EnableUnsafeMatchOptimizations>True</armgcccpp.compiler.optimization.EnableUnsafeMatchOptimizations>
+        <armgcccpp.compiler.optimization.EnableFastMath>True</armgcccpp.compiler.optimization.EnableFastMath>
+        <armgcccpp.compiler.optimization.DebugLevel>Maximum (-g3)</armgcccpp.compiler.optimization.DebugLevel>
+        <armgcccpp.compiler.warnings.AllWarnings>True</armgcccpp.compiler.warnings.AllWarnings>
+        <armgcccpp.compiler.miscellaneous.OtherFlags>-Wno-unknown-pragmas -pipe -fno-strict-aliasing -Wall -Wextra -ffunction-sections -fdata-sections --param max-inline-insns-single=500 -mfloat-abi=softfp -mfpu=fpv4-sp-d16</armgcccpp.compiler.miscellaneous.OtherFlags>
+        <armgcccpp.linker.general.AdditionalSpecs>Use syscall stubs (--specs=nosys.specs)</armgcccpp.linker.general.AdditionalSpecs>
+        <armgcccpp.linker.libraries.Libraries>
+          <ListValues>
+            <Value>libm</Value>
+            <Value>libserial_circular_buffer_service.a</Value>
+            <Value>libLSCP_service.a</Value>
+          </ListValues>
+        </armgcccpp.linker.libraries.Libraries>
+        <armgcccpp.linker.libraries.LibrarySearchPaths>
+          <ListValues>
+            <Value>../build</Value>
+            <Value>../LSCI libraries</Value>
+            <Value>../../../Main/LSCI libraries</Value>
+            <Value>../../../../Libraries/serial_circular_buffer_service/Main/serial_circular_buffer_service/Debug</Value>
+            <Value>../../../../Libraries/LSCP_Service/Main/LSCP_Service/Debug</Value>
+            <Value>../../../Libraries/LSCP_Service/Main/LSCP_Service/Debug</Value>
+            <Value>../../../Libraries/serial_circular_buffer_service/Main/serial_circular_buffer_service/Debug</Value>
+          </ListValues>
+        </armgcccpp.linker.libraries.LibrarySearchPaths>
+        <armgcccpp.linker.optimization.GarbageCollectUnusedSections>True</armgcccpp.linker.optimization.GarbageCollectUnusedSections>
+        <armgcccpp.linker.memorysettings.ExternalRAM />
+        <armgcccpp.linker.miscellaneous.LinkerFlags>-Tsam4e16e_flash.ld</armgcccpp.linker.miscellaneous.LinkerFlags>
+        <armgcccpp.assembler.debugging.DebugLevel>Default (-g)</armgcccpp.assembler.debugging.DebugLevel>
+        <armgcccpp.preprocessingassembler.general.IncludePaths>
+          <ListValues>
+            <Value>%24(PackRepoDir)\atmel\SAM4E_DFP\1.0.27\ic.sam4e\include</Value>
+            <Value>%24(PackRepoDir)\arm\cmsis\4.2.0\CMSIS\Include\</Value>
+          </ListValues>
+        </armgcccpp.preprocessingassembler.general.IncludePaths>
+        <armgcccpp.preprocessingassembler.debugging.DebugLevel>Default (-Wa,-g)</armgcccpp.preprocessingassembler.debugging.DebugLevel>
+      </ArmGccCpp>
+    </ToolchainSettings>
+  </PropertyGroup>
+  <ItemGroup>
+    <Folder Include="LSCI libraries" />
+    <Folder Include="include" />
+    <Folder Include="build" />
+    <Folder Include="port" />
+    <Folder Include="source" />
+    <Folder Include="third party" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="build\sam4e16e_flash.ld">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="build\sam4e16e_sram.ld">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="build\sam4e_flash.ld">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="build\sam4e_sram.ld">
+      <SubType>compile</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="build\startup_sam4e.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="build\syscalls.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="build\system_sam4e.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="include\android_comm_interface_manager.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="include\calibration.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="include\command_manager.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="include\output_control.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="include\settings_manager.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="include\sine_wave.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="include\sources_command_callbacks.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="include\sources_settings_callbacks.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="include\types.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="include\utility_functions.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="LSCI libraries\HAL_serial_circular_buffer.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="LSCI libraries\Icomms_circular_buffer.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="LSCI libraries\LSCP_service.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="LSCI libraries\serial_circular_buffer_service.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="port\HAL.cpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="port\HAL.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="source\android_comm_interface_manager.cpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="source\calibration.cpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="source\command_manager.cpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="source\main.cpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="source\output_control.cpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="source\settings_manager.cpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="source\sine_wave.cpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="source\sources_command_callbacks.cpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="source\sources_settings_callbacks.cpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="source\utility_functions.cpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="third party\cJSON.h">
+      <SubType>compile</SubType>
+    </Compile>
+  </ItemGroup>
+  <Import Project="$(AVRSTUDIO_EXE_PATH)\\Vs\\Compiler.targets" />
+</Project>
